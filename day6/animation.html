@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Title</title>
+    <style>
+    
+        #box {
+            width: 50px;
+            height: 50px;
+            background: red;
+            animation: pushp 3s infinite linear 0s;
+            margin-top: 350px;
+            margin-left: 150px;
+        }
+        @keyframes pushp{
+        0%{
+            margin-top: 350px;
+            margin-left: 150px;
+            background: blue;
+        }
+        25% {
+            margin-top: 0px;
+            margin-left: 350px;
+            background: green;
+        }
+        50% {
+            margin-top: 350px;
+            margin-left: 500px;
+            background: yellow;
+        }
+        75% {
+            margin-top: 0px;
+            margin-left: 750px;
+            background: rgb(51, 51, 48);
+        }
+        100% {
+            margin-top: 500px;
+            margin-left: 750px;
+            background: rgb(51, 51, 48);
+        }
+        
+    }
+    </style>
+
+</head>
+<body>
+    <div id="box">
+        <div class="ball"></div>
+    </div>
+</body>

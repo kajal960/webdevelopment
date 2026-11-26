@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title> Document</title>
+        <style>
+        #box {
+            width: 500px;
+            height: 400px;
+            background-color: lightblue;
+        }
+         </style>
+    </head>
+    <body>
+        <div id="box">
+            <div class="b1">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci tempora recusandae dignissimos ullam illo non unde ad omnis aliquam? Excepturi et nesciunt totam quod ab ipsum delectus eos facilis blanditiis?
+            </p>
+        </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#box').find("p").css({"background": "orange"});
+        })
+    </script>
+    </body>
+</html>

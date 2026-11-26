@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kajal's Blog</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+        background-color: #26926e;
+        font-family: Arial, sans-serif;
+        color: #333;
+        line-height: 1.6;
+        }
+
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #ddd;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: italic;
+        }
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            background: #0077cc;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #666;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #0077cc;
+        }
+
+        .container {
+        max-width: 1000px;
+        margin: 30px auto;
+        padding: 0 20px;
+
+        }
+
+        .hero {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            margin-bottom: 30px;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #111;
+        }
+
+        .hero p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .content-layout {
+        display: flex;
+        gap: 30px;
+        }
+
+        main {
+        flex: 2;
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        }
+
+        main h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #111;
+        }
+
+        main p {
+        margin-bottom: 15px;
+        }
+
+        aside {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        }
+
+        .sidebar-box {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        }
+
+        .sidebar-box h4 {
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: #111;
+        border-bottom: 2px solid #0077cc;
+        padding-bottom: 5px;
+        }
+
+        .sidebar-box ul {
+            list-style: none;
+        }
+
+        .sidebar-box ul li {
+            margin-bottom: 8px;
+        }
+
+        .sidebar-box ul li a {
+            text-decoration: none;
+         color: #0077cc;
+        font-size: 14px;
+        }
+
+        .sidebar-box ul li a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #ffffff;
+            border-top: 1px solid #ddd;
+            margin-top: 40px;
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo-area">
+            <div class="avatar">K</div>
+            <h1>Kajal's Blog</h1>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Articles</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Body Container -->
+    <div class="container">
+        
+        <!-- Hero Intro Section -->
+        <section class="hero">
+            <span style="color: #0077cc; font-size: 12px; font-weight: bold; text-transform: uppercase;">Web Development</span>
+            <h2>Writing about the craft of building thoughtful digital experiences.</h2>
+            <p>I share ideas on design thinking, front-end creativity, and the systems behind polished user experiences.</p>
+        </section>
+
+        <!-- Two-Column Layout -->
+        <div class="content-layout">
+            
+            <!-- Main Article -->
+            <main>
+                <p style="color: #777; font-size: 13px;">Published on September 23, 2026 • 5 min read</p>
+                <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0;">
+                
+                <p>Sidebars remain one of the most effective tools for personal blogs. They give you a persistent space to showcase who you are and share your best ideas.</p>
+                
+                <h3>Why simplicity matters</h3>
+                <p>White space, measured typography, and a deliberate flow of content all make the reading experience calmer and more trustworthy.</p>
+                
+                <blockquote style="border-left: 4px solid #0077cc; padding-left: 15px; margin: 20px 0; font-style: italic; color: #555;">
+                    “The best digital experiences feel obvious, intentional, and never rushed.”
+                </blockquote>
+                
+                <p>Every small decision shapes the personality of the site. A strong blog should feel thoughtful, grounded, and unmistakably human.</p>
+            </main>
+
+            <!-- Sidebar -->
+            <aside>
+                <!-- Author Bio Box -->
+                <div class="sidebar-box" style="text-align: center;">
+                    <div class="avatar" style="width: 60px; height: 60px; margin: 0 auto 10px auto; font-size: 20px;">KJ</div>
+                    <h3 style="margin-bottom: 5px;">Kajal Jat</h3>
+                    <p style="font-size: 13px; color: #666;">Writer and web developer exploring minimalist design.</p>
+                </div>
+
+                <!-- Recent Posts Box -->
+                <div class="sidebar-box">
+                    <h4>Recent Posts</h4>
+                    <ul>
+                        <li><a href="#">Reflecting on my first year of independent writing</a></li>
+                        <li><a href="#">A guide to clean typography in web design</a></li>
+                        <li><a href="#">Why I switched back to static site generators</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Kajal Jat. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+        width: 500px;
+        height: 400px;
+        background-color: lightblue;
+    }
+    </style>
+</head>
+<body>
+    <button id="rm">Remove </button>
+    <button id="em">Empty </button>
+    <div id="box">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum vero in minus fugiat distinctio voluptatibus a, nisi quaerat laudantium ipsa quia praesentium dolorem corporis doloremque! Ab ipsa magni repudiandae fugit.
+            
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum vero in minus fugiat distinctio voluptatibus a, nisi quaerat laudantium ipsa quia praesentium dolorem corporis doloremque! Ab ipsa magni repudiandae fugit.
+            
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum vero in minus fugiat distinctio voluptatibus a, nisi quaerat laudantium ipsa quia praesentium dolorem corporis doloremque! Ab ipsa magni repudiandae fugit.
+        </p>
+    </div>
+    <script src="jquery.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function() {
+            $('#rm').click(function(){
+                $('#box').remove();
+            })
+            $('#em').click(function(){
+                $('#box').empty();
+            })
+        })
+    </script>
+</body>
+</html>

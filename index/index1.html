@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Blog</title>
+    <!-- Include Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Header / Navigation -->
+    <header class="bg-white border-b border-gray-200 py-4 mb-8">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold tracking-tight">Alex's Journal</h1>
+            <nav class="space-x-6 text-sm font-medium">
+                <a href="#" class="hover:text-blue-600">Home</a>
+                <a href="#" class="hover:text-blue-600">About</a>
+                <a href="#" class="hover:text-blue-600">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content & Sidebar Wrapper -->
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+
+        <!-- Primary Blog Post Area (Takes up 2 columns on large screens) -->
+        <main class="lg:col-span-2 bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+            <span class="text-xs font-semibold text-blue-600 uppercase tracking-wider">Web Development</span>
+            <h2 class="text-3xl font-bold mt-2 mb-4">Building a Minimalist Personal Blog from Scratch</h2>
+            <p class="text-sm text-gray-400 mb-6">Published on September 23, 2026 • 5 min read</p>
+            
+            <div class="space-y-4 text-gray-600 leading-relaxed">
+                <p>Sidebars remain one of the most effective tools for personal blogs. They give you a persistent space to showcase who you are, drive newsletter signups, and link back to your best content without disrupting the flow of your writing.</p>
+                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-2">Why Simplicity Matters</h3>
+                <p>When designing a blog, keeping the main reading pane clean and free of heavy clutter ensures a higher engagement rate. White space is your friend.</p>
+            </div>
+        </main>
+
+        <!-- Sidebar Area (Takes up 1 column on large screens) -->
+        <aside class="space-y-6">
+            
+            <!-- Widget 1: Author Bio -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
+                <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center text-gray-500 font-bold text-xl">AV</div>
+                <h3 class="font-bold text-lg">Alex Vance</h3>
+                <p class="text-sm text-gray-500 mt-2">Writer, developer, and digital creator exploring design systems and minimalist architecture.</p>
+            </div>
+
+            <!-- Widget 2: Search Bar -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <h4 class="font-bold text-sm mb-3 uppercase tracking-wide text-gray-700">Search</h4>
+                <input type="text" placeholder="Search articles..." class="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <!-- Widget 3: Recent Posts -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <h4 class="font-bold text-sm mb-3 uppercase tracking-wide text-gray-700">Recent Posts</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#" class="text-blue-600 hover:underline">Reflecting on My First Year of Independent Writing</a></li>
+                    <li><a href="#" class="text-blue-600 hover:underline">A Guide to Clean Typography in Web Design</a></li>
+                    <li><a href="#" class="text-blue-600 hover:underline">Why I Switched Back to Static Site Generators</a></li>
+                </ul>
+            </div>
+
+            <!-- Widget 4: Newsletter Signup -->
+            <div class="bg-blue-600 text-white p-6 rounded-xl shadow-sm">
+                <h4 class="font-bold text-sm mb-2 uppercase tracking-wide">Join the Newsletter</h4>
+                <p class="text-xs text-blue-100 mb-4">Get my latest articles delivered straight to your inbox once a week.</p>
+                <input type="email" placeholder="Your email address" class="w-full px-3 py-2 rounded-lg text-sm text-gray-800 mb-2 focus:outline-none">
+                <button class="w-full bg-gray-900 text-white text-sm font-medium py-2 rounded-lg hover:bg-black transition">Subscribe</button>
+            </div>
+
+        </aside>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-6 text-center text-xs text-gray-400">
+        <p>&copy; 2026 Alex Vance. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

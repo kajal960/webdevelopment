@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Document</title>
+
+
+<style>
+        .dark {
+            background: black;
+            color: white;
+        }
+
+        .default {
+            background: pink;
+            color: black;
+        }
+
+        .light {
+            background: lavender;
+            color: black;
+        }
+    </style>
+
+
+</head>
+
+<body class="default">
+    <h1> WELCOME TO JQUERY</h1>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, sunt recusandae doloremque, cum
+        reprehenderit
+        ad repudiandae numquam vitae sapiente optio quae nam provident debitis vero explicabo officiis ipsum veniam
+        aliquid!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione sint ullam impedit natus nesciunt ab obcaecati
+        dolorum nulla enim doloremque eligendi, totam odit consequatur aliquam praesentium, iste blanditiis temporibus
+        quis?
+    </p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, deleniti ea, praesentium iste corporis
+        temporibus minima, possimus quae facere facilis ipsum eos ducimus fugiat impedit explicabo illo officia!
+        Expedita, iure? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi iusto perspiciatis cum tempore
+        voluptas voluptates ratione distinctio animi nulla corrupti blanditiis dignissimos recusandae reprehenderit,
+        sequi dolor saepe, nam ab assumenda! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, a voluptates.
+        Vero deleniti natus sequi maxime similique. Assumenda dolorum quia quas voluptates, soluta unde ratione quasi
+        aliquam. Quod, a ab!</p>
+    <button id="dark">Dark Theme</button>
+    <button id="light">light Theme</button>
+    <button id="default">Default Theme</button>
+
+    <script src="jquery.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            $('body').addClass('default');
+            $('#dark').click(function () {
+                $('body').addClass('dark');
+                $('body').removeClass('default');
+                $('body').removeClass('light');
+            })
+            $('#light').click(function () {
+                $('body').addClass('light');
+                $('body').removeClass('default');
+                $('body').removeClass('dark');
+            })
+            $('#default').click(function () {
+                $('body').addClass('default');
+                $('body').removeClass('light');
+                $('body').removeClass('dark');
+            })
+        })
+    </script>
+
+</body>
+
+</html>

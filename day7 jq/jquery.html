@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+    }
+    </style>
+
+</head>
+<body>
+<h1>WELCOME TO JQUERY<h1>
+    <button id="su">SlideUp</button>
+    <button id="sd">SlideDown</button>
+    <button id="st">SlideToggle</button>
+    
+    <img src="C:\Users\kajal\Downloads\road.jpg" width="400px"/>
+    <script src="jquery.js" type="text/javascript"></script>
+    <button id="red">Red</button>
+<script>
+
+
+    $('#su').click(function() {
+        $('img').slideUp(3000);
+    })
+     $('#sd').click(function() {
+        $('img').slideDown(3000);
+    })
+     $('#st').click(function() {
+        $('img').slideToggle(3000);
+    });  
+    $(document).ready(function() {
+    $('#red').click(function() {
+    $('h1').css({"color":"red", "border-top":"1px solid yellow", "background":"blue"});
+    });
+    })
+    
+</script>
+</body>
+</html>

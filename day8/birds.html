@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title> Document</title>
+         <style>
+            #frame {
+                
+                width: 400px;
+                height: 600px;
+                border-color: black;
+            }
+            .parrot{
+                width: 150px;
+                height: 200px;
+                border: 2px solid red;
+                background: url('https://images.unsplash.com/photo-1552728089-57bdde30beb3?auto=format&fit=crop&w=600&q=80');
+                background-size: cover;
+            }
+            .sparrow{
+                width: 200px;
+                height: 200px;
+                border: 2px solid rgb(133, 97, 97);
+                background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCDHSdYwumL6zRd3bMoSPi8Lp4ZmiO44680qFHbh5RNA&s=10');
+                background-size: cover;
+            }
+            .king{
+                width: 400px;
+                height: 200px;
+                border: 2px solid rgb(239, 35, 35);
+                background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR02ov_1Y-bF3RWjj8bkOvxAnmdtzMwaPlyc9HL6bIs1Q&s=10');
+                background-size: cover;
+            }
+         </style>
+    </head>
+    <body>
+        <button id="parrot">Parrot</button>
+        <button id="sparrow">Sparrow</button>
+        <button id="king">Kingfisher</button>
+        <div id="frame"></div>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#parrot').click(function() {
+                $('div').addClass('parrot').removeClass('sparrow').removeClass('king')
+            });
+            $('#sparrow').click(function() {
+                $('div').addClass('sparrow').removeClass('parrot').removeClass('king')
+            });
+             $('#king').click(function() {
+                $('div').addClass('king').removeClass('parrot').removeClass('sparrow')
+            });
+        })
+    </script>
+    </body>
+</html>
